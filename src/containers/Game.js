@@ -10,6 +10,7 @@ const Game = (props) => {
     <div className="gameContainer">
       <DeckContainer />
       <GameButtons {...props} />
+      <p>{ (props.activePlayer === 'PLAYER_1') ? 'Player 1' : 'Player 2'} is guessing!</p>
       <ScoreBoard 
         won= { props.won }
         winner={ props.winner }
